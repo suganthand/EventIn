@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onRadioSelected"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current City"
+            android:id="@+id/radioButton"
+            android:onClick="onRadioSelected"
+            android:checked="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Manually"
+            android:id="@+id/radioButton1"
+            android:onClick="onRadioSelected"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            />
+
+    </RadioGroup>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/locationPreference"
+        android:hint="Enter the City Name" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Save Settings"
+        android:layout_gravity="center"
+        android:id="@+id/entered_location_button"
+        android:onClick="onLocationClick"/>
+    <TextView
+        android:textColor="#2200E6"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        android:layout_gravity="center"
+        android:id="@+id/cancel"
+        android:onClick="onCancel"/>
+
+
+
+</LinearLayout>
